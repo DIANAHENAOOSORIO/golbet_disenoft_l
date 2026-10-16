@@ -24,6 +24,11 @@ public static class DbSeeder
         await SeedIdentityAsync(roleManager, userManager);
     }
 
+    public static async Task SeedAsync(AppDbContext context)
+    {
+        throw new NotImplementedException();
+    }
+
     // ---- Domain data: teams and matches (Module 3) ----
     private static async Task SeedDomainAsync(AppDbContext context)
     {
